@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_background"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/icon_large"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_timer"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:tint="#2979FF"
+        android:background="@drawable/icon_bg"
+        android:padding="6dp" />
+
+    <TextView
+        android:id="@+id/title_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Tracker"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/icon_large"
+        android:layout_alignTop="@id/icon_large"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:id="@+id/date_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today"
+        android:textSize="12sp"
+        android:textColor="#80FFFFFF"
+        android:layout_toEndOf="@id/icon_large"
+        android:layout_below="@id/title_large"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:id="@+id/widget_status_text_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IDLE"
+        android:textSize="12sp"
+        android:textColor="#B0FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:id="@+id/main_stats_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/icon_large"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/card_bg"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom">
+            <TextView
+                android:id="@+id/widget_today_hours_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:textSize="48sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hours today"
+                android:textSize="14sp"
+                android:textColor="#80FFFFFF"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+            <ProgressBar
+                android:id="@+id/widget_progress_large"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1"
+                android:progressDrawable="@drawable/custom_progress_bar"
+                android:progress="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:id="@+id/widget_progress_text_large"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0% of 9h goal"
+                android:textSize="12sp"
+                android:textColor="#80FFFFFF" />
+            <TextView
+                android:id="@+id/widget_earnings_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$0.00"
+                android:textSize="12sp"
+                android:textColor="#00C853"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/main_stats_large"
+        android:layout_marginTop="16dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_coffee"
+                android:tint="#FF6D00" />
+            <TextView
+                android:id="@+id/widget_break_time_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0m"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BREAK TIME"
+                android:textSize="10sp"
+                android:textColor="#80FFFFFF"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_analytics"
+                android:tint="#AA00FF" />
+            <TextView
+                android:id="@+id/widget_break_count_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BREAKS"
+                android:textSize="10sp"
+                android:textColor="#80FFFFFF"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="12dp">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_trending_up"
+                android:tint="#00BFA5" />
+            <TextView
+                android:id="@+id/widget_avg_break_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0m"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AVG LENGTH"
+                android:textSize="10sp"
+                android:textColor="#80FFFFFF"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

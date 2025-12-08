@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_background"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/icon_small"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_timer"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:tint="@color/widget_accent_blue" />
+
+    <ImageView
+        android:id="@+id/status_dot_small"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:background="@drawable/status_dot_bg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TODAY"
+        android:textSize="12sp"
+        android:textColor="@color/widget_text_secondary"
+        android:layout_below="@id/icon_small"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/widget_today_hours_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="36sp"
+        android:textColor="@color/widget_text_primary"
+        android:textStyle="bold"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOURS"
+        android:textSize="12sp"
+        android:textColor="@color/widget_text_secondary"
+        android:layout_below="@id/widget_today_hours_small"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/widget_status_text_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IDLE"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg_small"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

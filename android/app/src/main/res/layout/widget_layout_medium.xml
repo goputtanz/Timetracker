@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_background"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/icon_medium"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_timer"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:tint="@color/widget_accent_blue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Tracker"
+        android:textSize="14sp"
+        android:textColor="@color/widget_text_primary"
+        android:layout_toEndOf="@id/icon_medium"
+        android:layout_alignTop="@id/icon_medium"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp" />
+
+    <ImageView
+        android:id="@+id/status_dot_medium"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:background="@drawable/status_dot_bg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:id="@+id/data_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/icon_medium"
+        android:layout_marginTop="16dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/widget_today_hours_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:textSize="24sp"
+                android:textColor="@color/widget_text_primary"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOURS"
+                android:textSize="10sp"
+                android:textColor="@color/widget_text_secondary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/widget_break_time_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0m"
+                android:textSize="24sp"
+                android:textColor="@color/widget_text_primary"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BREAKS"
+                android:textSize="10sp"
+                android:textColor="@color/widget_text_secondary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/widget_break_count_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="24sp"
+                android:textColor="@color/widget_text_primary"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TAKEN"
+                android:textSize="10sp"
+                android:textColor="@color/widget_text_secondary" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/data_container"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <ProgressBar
+            android:id="@+id/widget_progress_medium"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="8dp"
+            android:layout_weight="1"
+            android:progressDrawable="@drawable/custom_progress_bar"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/widget_status_text_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IN"
+            android:textColor="@color/white"
+            android:background="@drawable/button_bg_small"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp" />
+    </LinearLayout>
+
+</RelativeLayout>
