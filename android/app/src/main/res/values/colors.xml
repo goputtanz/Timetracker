@@ -10,4 +10,5 @@
     <color name="widget_accent_red">#D4183D</color>
     <color name="widget_accent_orange">#F59E0B</color>
     <color name="widget_divider">#E0E0E0</color>
+	<color name="ic_launcher_background">#0F172A</color>
 </resources>
