@@ -34,7 +34,7 @@ class MyApp extends ConsumerWidget {
       title: 'Staytics',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light,
-      darkTheme: AppTheme.dark,
+      darkTheme: AppTheme.dark, 
       themeMode: themeMode,
       home: const MainScreen(),
     );
