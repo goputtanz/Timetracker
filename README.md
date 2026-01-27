@@ -51,6 +51,9 @@ flutter run
 To generate the APK, run:
 
 flutter build apk --debug
+```
+⬇️ Download APK
 
-### To download apk
-👉 **[Download APK] (https://github.com/goputtanz/Timetracker/releases/download/v1.0.0/app-debug.apk)**
+You can download the latest debug APK from GitHub Releases:
+
+👉 Download APK
