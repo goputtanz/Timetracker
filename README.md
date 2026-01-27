@@ -45,15 +45,16 @@
 ```bash
 flutter pub get
 flutter run
+```
 
 ### 📦 APK Build
 
 To generate the APK, run:
-
+```bash
 flutter build apk --debug
 ```
 ⬇️ Download APK
 
 You can download the latest debug APK from GitHub Releases:
 
-👉 Download APK
+👉 <a href = "https://github.com/goputtanz/Timetracker/releases/download/v1.0.0/app-debug.apk">Download APK</a>
