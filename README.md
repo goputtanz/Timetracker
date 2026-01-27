@@ -45,3 +45,8 @@
 ```bash
 flutter pub get
 flutter run
+
+### apk build
+```bash
+flutter build apk --debug
+```
