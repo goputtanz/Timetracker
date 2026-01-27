@@ -46,7 +46,9 @@
 flutter pub get
 flutter run
 
-### apk build
+### 📦 APK Build
+
+To generate the APK, run:
+
 ```bash
 flutter build apk --debug
-```
